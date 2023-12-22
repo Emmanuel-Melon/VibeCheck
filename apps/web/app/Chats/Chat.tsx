@@ -1,4 +1,4 @@
-import { useChatsStore } from "../src/hooks/useChatsStore";
+import { useChatsStore } from "../../src/hooks/useChatsStore";
 
 
 export const ConversationComponent = () => {

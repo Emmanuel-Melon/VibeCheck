@@ -14,7 +14,7 @@ const chats = [
             sender: {
                 name: "Ava Taylor",
                 id: 1,
-                avatar: "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                avatar: "https://www.stylevore.com/wp-content/uploads/2020/01/1b879ad961b1c7c082e8d21be64bb0d7.jpg"
             }
         },
         {
@@ -83,7 +83,8 @@ export const useChatsStore = create<Store>((set) => ({
   currentChat: chats[0], // no current chat initially
   goToNextChat: () => set((state) => {
     console.log("next");
-    // const nextIndex = state.currentChatIndex + 1;
+    const nextIndex = state.currentChatIndex + 1;
+    console.log(nextIndex);
     // if (nextIndex >= state.chat.length) {
     //   return; // do nothing if already at the last chat
     // }

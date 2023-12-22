@@ -9,7 +9,7 @@ import {
 } from "@apollo/experimental-nextjs-app-support/ssr";
 import { client } from "../src/lib/graphql/client";
 
-import { Chats } from "./Chats";
+import { ChatList } from "./Chats/ChatList";
 
 export default function Page(): JSX.Element {
 
@@ -17,8 +17,7 @@ export default function Page(): JSX.Element {
     <ApolloNextAppProvider makeClient={client}>
     <main className="min-h-screen p-8">
     <section className="flex h-full">
-
-      <SwipeQueue />
+      <ChatList />
     </section>
   </main>
     </ApolloNextAppProvider>

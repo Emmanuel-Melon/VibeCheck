@@ -1,6 +1,8 @@
 "use client";
-import { useChatsStore } from "../src/hooks/useChatsStore";
-import { Icon } from "@repo/ui/Icon";
+import { useChatsStore } from "../../src/hooks/useChatsStore";
+import { ChatControls } from "./ChatControls";
+import { ChatInputs } from "./ChatInputs";
+import { ChatBubble } from "./ChatBubble";
 
 const chats = [
   {
@@ -62,70 +64,6 @@ export const ChatHeads = () => {
   );
 };
 
-const ChatControls = () => {
-  return (
-    <div>
-      <h3>Controls</h3>
-    </div>
-  );
-};
-
-const ChatInputs = () => {
-  return (
-    <div className="flex gap-4 w-full bg-gray-50 rounded-full">
-      <div className="flex gap-2">
-      <button
-        title="skip"
-        className="btn btn-sm btn-info btn-square btn-error"
-      >
-        <Icon icon="heroicons:gif" />
-      </button>
-      </div>
-      <input type="text" placeholder="Type here" className="input input-sm input-bordered w-full max-w-xs grow" />
-      <button
-        title="skip"
-        className="btn btn-sm btn-info btn-square btn-error"
-      >
-        <Icon icon="heroicons:face-smile" />
-      </button>
-      <button className="btn btn-sm">Send</button>
-    </div>
-  );
-};
-
-const ChatBubble = ({ message }) => {
-  const currentChat = useChatsStore((state) => state.currentChat);
-  return (
-    <div
-      className={`chat ${
-        message.sender.id === currentChat.user.id ? "chat-start" : "chat-end"
-      }`}
-    >
-      <div className="chat-image avatar">
-        <div className="w-10 rounded-full">
-          <img
-            alt="Tailwind CSS chat bubble component"
-            src={message.sender.avatar}
-          />
-        </div>
-      </div>
-      <div className="chat-header">
-        Obi-Wan Kenobi
-        <time className="text-xs opacity-50">12:45</time>
-      </div>
-      <div
-        className={`chat-bubble ${
-          message.sender.id === currentChat.user.id
-            ? "bg-primary"
-            : "bg-gray-50"
-        }`}
-      >
-        {message.text}
-      </div>
-      <div className="chat-footer opacity-50">Delivered</div>
-    </div>
-  );
-};
 
 const CurrentChatMessages = () => {
   const currentChat = useChatsStore((state) => state.currentChat);
@@ -149,7 +87,7 @@ const CurrentChat = () => {
   );
 };
 
-export const Chats = () => {
+export const ChatList = () => {
   return (
     <div className="card card-compact shadow bg-white w-full">
       <div className="card-body">

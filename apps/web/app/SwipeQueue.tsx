@@ -7,8 +7,8 @@ export const SwipeQueue = () => {
     const currentMatch = useSwipeStore((state) => state.currentMatch);
 
 
-    const { data} = useGetUsers();
-    console.log(data);
+    // const { data} = useGetUsers();
+    // console.log(data);
     
     return (
         <div className="h-full">
