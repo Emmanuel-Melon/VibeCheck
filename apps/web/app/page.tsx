@@ -1,9 +1,4 @@
 import { SwipeQueue } from "./VibePool/SwipeQueue";
-import { SideMenu } from "./components/SideMenu";
-import { MatchOVerview } from "./VibePool/MatchOverview";
-import { useGetUsers } from "../src/hooks/users";
-import { MatchSuccess } from "./Match/MatchSuccess";
-import { Matches } from "./Match/Matches";
 import { UserInfoForm } from "./User/UserInfoForm";
 import { UserPreferenceForm } from "./User/UserPreferencesForm";
 
