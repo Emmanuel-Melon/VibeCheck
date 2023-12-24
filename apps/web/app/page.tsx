@@ -4,6 +4,8 @@ import { MatchOVerview } from "./VibePool/MatchOverview";
 import { useGetUsers } from "../src/hooks/users";
 import { MatchSuccess } from "./Match/MatchSuccess";
 import { Matches } from "./Match/Matches";
+import { UserInfoForm } from "./User/UserInfoForm";
+import { UserPreferenceForm } from "./User/UserPreferencesForm";
 
 import {
   ApolloNextAppProvider,
@@ -18,8 +20,10 @@ export default function Page(): JSX.Element {
   return (
     <ApolloNextAppProvider makeClient={client}>
       <main className="min-h-screen p-8">
-        <section className="flex h-full">
+        <section className="flex h-full gap-8">
           <SwipeQueue />
+          <UserInfoForm />
+          <UserPreferenceForm />
         </section>
       </main>
     </ApolloNextAppProvider>
