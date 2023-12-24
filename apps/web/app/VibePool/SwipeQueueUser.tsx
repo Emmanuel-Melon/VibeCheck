@@ -1,5 +1,5 @@
 import { Icon } from "@repo/ui/Icon";
-import { useSwipeStore } from "../src/hooks/useSwipesStore";
+import { useSwipeStore } from "../../src/hooks/useSwipesStore";
 
 const Controls = () => {
   const likeMatch = useSwipeStore((state) => state.likeMatch);

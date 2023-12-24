@@ -1,4 +1,4 @@
-import { Matches } from "./Matches";
+import { Matches } from "../Match/Matches";
 export const SideMenu = () => {
     return (
         <div role="tablist" className="tabs tabs-bordered">
