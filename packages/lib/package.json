@@ -1,0 +1,12 @@
+{
+  "name": "@vibecheck/lib",
+  "version": "1.0.0",
+  "private": "true",
+  "license": "MIT",
+  "exports": {
+    "./dates": "./src/dates.ts"
+  },
+  "dependencies": {
+    "date-fns": "^3.0.6"
+  }
+}

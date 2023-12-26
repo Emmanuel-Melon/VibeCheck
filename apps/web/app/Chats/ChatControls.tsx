@@ -1,7 +1,7 @@
 import { Icon } from "@repo/ui/Icon";
 export const ChatControls = () => {
     return (
-      <div className="flex justify-between gap-4 w-full items-center rounded-full">
+      <div className="flex justify-between p-2 bg-gray-50 gap-4 w-full items-center">
         <div className="flex items-center gap-2">
         <div className="avatar">
           <div className="w-10 rounded-full">
@@ -12,7 +12,7 @@ export const ChatControls = () => {
           </div>
         </div>
         <div>
-          <h3 className="text-lg">Ava Tayloer</h3>
+          <h3 className="text-md">Ava Tayloer</h3>
         </div>
         </div>
         <div className="flex gap-2">
