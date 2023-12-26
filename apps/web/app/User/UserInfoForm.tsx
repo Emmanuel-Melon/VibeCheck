@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { FormControl, FormControlError } from "@repo/ui/FormControl";
 // import { useOnboardingStore } from './path-to-your-store';
 
+
 export const UserInfoForm = () => {
   const { register, handleSubmit } = useForm();
   // const setUserInfo = useOnboardingStore((state) => state.setUserInfo);

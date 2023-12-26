@@ -1,4 +1,4 @@
-export const VibeCheck = () => {
+export const OutgoingCall = () => {
     return (
         <div>
             <p>Kicks or Hats?</p>

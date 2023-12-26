@@ -24,7 +24,7 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <body className="h-min-screen">{children}</body>
+      <body className="h-min-screen flex justify-center items-center">{children}</body>
     </html>
   );
 }

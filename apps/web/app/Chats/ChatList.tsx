@@ -3,37 +3,40 @@ import { useChatsStore } from "../../src/hooks/useChatsStore";
 import { ChatControls } from "./ChatControls";
 import { ChatInputs } from "./ChatInputs";
 import { ChatBubble } from "./ChatBubble";
+import { Icon } from "@repo/ui/Icon";
 
 const chats = [
   {
     id: 1,
     user: {
       name: "Ava Taylor",
-      avatar: "https://www.stylevore.com/wp-content/uploads/2020/01/1b879ad961b1c7c082e8d21be64bb0d7.jpg"
+      avatar:
+        "https://www.stylevore.com/wp-content/uploads/2020/01/1b879ad961b1c7c082e8d21be64bb0d7.jpg",
     },
   },
   {
     id: 2,
     user: {
       name: "Sophia Williams",
-      avatar: "https://www.refinery29.com/images/10353760.jpg"
+      avatar: "https://www.refinery29.com/images/10353760.jpg",
     },
   },
   {
     id: 3,
     user: {
       name: "Olivia Brown",
-      avatar: "https://i0.wp.com/i.pinimg.com/originals/ea/33/54/ea3354fc1adfb967691d628fd8d2c726.jpg?resize=650,400"
+      avatar:
+        "https://i0.wp.com/i.pinimg.com/originals/ea/33/54/ea3354fc1adfb967691d628fd8d2c726.jpg?resize=650,400",
     },
   },
 ];
 
 const ChatOverview = ({ chat, updateChatByIndex }) => {
-    console.log(updateChatByIndex);
+  console.log(updateChatByIndex);
   return (
     <div className="flex items-center gap-4" onClick={updateChatByIndex}>
       <div className="avatar">
-        <div className="w-16 rounded-full">
+        <div className="w-12 rounded-full">
           <img
             alt="Tailwind CSS chat bubble component"
             src={chat.user.avatar}
@@ -64,7 +67,6 @@ export const ChatHeads = () => {
   );
 };
 
-
 const CurrentChatMessages = () => {
   const currentChat = useChatsStore((state) => state.currentChat);
   console.log(currentChat);
@@ -79,7 +81,7 @@ const CurrentChatMessages = () => {
 
 const CurrentChat = () => {
   return (
-    <div className="grow space-y-2">
+    <div className="grow space-y-2 p-2">
       <ChatControls />
       <CurrentChatMessages />
       <ChatInputs />
@@ -89,17 +91,17 @@ const CurrentChat = () => {
 
 export const ChatList = () => {
   return (
-    <div className="card card-compact shadow bg-white w-full">
-      <div className="card-body">
-        <div className="flex">
-          <div className="space-y-2 basis-2/6">
-            <h3 className="text-lg">Chats</h3>
-            <ChatHeads />
-          </div>
-          <div className="divider divider-horizontal"></div>
-          <CurrentChat />
+    <div className="flex w-full  rounded-xl shadow bg-white">
+      <div className="space-y-2 basis-2/6 bg-gray-50 p-2">
+        <div className="flex items-center justify-between">
+          <h3 className="text-lg">Chats</h3>
+          <button className="btn btn-sm btn-square" title="New Message">
+            <Icon icon="heroicons:pencil-square" />
+          </button>
         </div>
+        <ChatHeads />
       </div>
+      <CurrentChat />
     </div>
   );
 };
