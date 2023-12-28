@@ -2,7 +2,7 @@ import { SwipeQueue } from "./VibePool/SwipeQueue";
 import { UserInfoForm } from "./User/UserInfoForm";
 import { UserPreferenceForm } from "./User/UserPreferencesForm";
 import { Header } from "./components/Header";
-import { ExploreVibes } from "./Vibes/ExploreVibes";
+import { ExploreVibes } from "./vibes/ExploreVibes";
 import { OutgoingCall } from "./Calls/OutgoingCall";
 import { UserProfile } from "./User/Profile";
 import { ListNotifications  } from "./notifications/ListNotifications";

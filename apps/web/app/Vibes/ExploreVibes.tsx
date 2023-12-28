@@ -1,4 +1,6 @@
+"use client";
 import { VibeCard } from "./VibeCard";
+import { useGetVibes } from "../../src/hooks/vibes";
 
 const vibes = [
   {
@@ -37,14 +39,17 @@ const vibes = [
     name: "Cooking",
   },
   {
-    "created_at": "2023-12-26T05:00:24.079425+00:00",
-    "id": "9250eb3d-8c11-4e1b-b460-ed4ca48b866f",
-    "image": "https://res.cloudinary.com/dwacr3zpp/image/upload/v1703565702/Designer_12.jpg",
-    "name": "Video Games"
-  }
+    created_at: "2023-12-26T05:00:24.079425+00:00",
+    id: "9250eb3d-8c11-4e1b-b460-ed4ca48b866f",
+    image:
+      "https://res.cloudinary.com/dwacr3zpp/image/upload/v1703565702/Designer_12.jpg",
+    name: "Video Games",
+  },
 ];
 
 export const ExploreVibes = () => {
+  //   const { data} = useGetVibes();
+  // console.log(data);
   return (
     <div className="space-y-2">
       <h3 className="text-xl">Explore some vibes, find your tribe</h3>
