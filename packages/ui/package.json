@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
+    "./Avatar": "./src/Avatar.tsx",
     "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx",
+    "./Card": "./src/Card/Card.tsx",
     "./code": "./src/code.tsx",
     "./FormControl": "./src/FormControl.tsx",
-    "./Icon": "./src/Icon.tsx"
+    "./Icon": "./src/Icon.tsx",
+    "./Input": "./src/Input.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

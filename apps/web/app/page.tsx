@@ -6,6 +6,7 @@ import { ExploreVibes } from "./vibes/ExploreVibes";
 import { OutgoingCall } from "./Calls/OutgoingCall";
 import { UserProfile } from "./User/Profile";
 import { ListNotifications  } from "./notifications/ListNotifications";
+import { UserInfo } from "./Onboarding/UserInfo";
 
 import {
   ApolloNextAppProvider,
@@ -15,14 +16,15 @@ import {
 import { client } from "../src/lib/graphql/client";
 
 import { Chats } from "./Chats/Chats";
+import { Matches } from "./Match/Matches";
 
 export default function Page(): JSX.Element {
   return (
     <ApolloNextAppProvider makeClient={client}>
-      <main className="min-h-screen p-2 basis-3/5 space-y-2">
+      <main className="min-h-screen p-2 basis-2/5 space-y-2">
         <Header />
         <section className="flex h-full gap-8">
-          <ListNotifications />
+          <Matches />
         </section>
       </main>
     </ApolloNextAppProvider>

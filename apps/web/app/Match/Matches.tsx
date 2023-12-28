@@ -1,4 +1,6 @@
-const girls = [
+import { Avatar } from "@repo/ui/Avatar";
+
+const matches = [
   {
     id: "1",
     name: "Emma Johnson",
@@ -60,27 +62,25 @@ const girls = [
   },
 ];
 
-const Match = ({ girl }) => {
+const Match = ({ match }) => {
   return (
-    <div className="basis-2/5 grow h-full">
-      <div className="card h-56 card-compact bg-white shadow image-full ">
-        <figure>
-          <img src={girl.avatar} alt="Shoes" />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">{girl.name}</h2>
-   
-        </div>
-      </div>
+    <div className="grow">
+      <Avatar src={match.avatar} alt={match.name} size="32" />
+      <h2 className="text-xl">{match.name}</h2>
     </div>
   );
 };
 export const Matches = () => {
   return (
-    <div className="flex flex-wrap gap-1">
-      {girls.map((girl) => (
-        <Match key={girl.id} girl={girl} />
-      ))}
+    <div className="space-y-8">
+      <div>
+        <h3 className="text-2xl">People you vibe with</h3>
+      </div>
+      <div className="flex flex-wrap gap-4">
+        {matches.map((match) => (
+          <Match key={match.id} match={match} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -17,7 +17,7 @@ export const FormControlError = ({ message }) => {
 export const FormControl: FC<FormControlProps> = ({ children, label }) => {
   return (
     <div className='form-control w-full'>
-      <label className='label'>
+      <label className='label text-gray-500'>
         <span className='label-text'>{label}</span>
       </label>
       {children}
