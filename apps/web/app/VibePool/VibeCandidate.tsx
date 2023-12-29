@@ -32,7 +32,7 @@ const Controls = () => {
   );
 };
 
-export const SwipeQueueUser = ({ girl }) => {
+export const VibeCandidate = ({ girl }) => {
   return (
     <div className="space-y-2">
       <div className="flex gap-2 items-center px-2">

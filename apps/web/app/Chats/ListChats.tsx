@@ -42,7 +42,7 @@ const chats = [
 export const ListChats = () => {
     const updateChatByIndex = useChatsStore((state) => state.goToNextChat);
     return (
-      <div className="space-y-4 p-2">
+      <div className="space-y-4">
         {chats.map((chat) => (
           <ChatOverview
             key={chat.id}

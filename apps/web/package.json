@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --max-warnings 0"
+    "lint": "eslint . --max-warnings 0",
+    "generate": "graphql-codegen"
   },
   "dependencies": {
     "@apollo/client": "^3.8.0-rc.2",

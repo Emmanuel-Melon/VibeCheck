@@ -2,7 +2,7 @@ import { Icon } from "@repo/ui/Icon";
 
 export const ChatInputs = () => {
   return (
-    <div className="flex gap-4 w-full rounded-full">
+    <div className="flex gap-4 w-full rounded-full  p-2">
       <div className="flex gap-2">
         <button title="skip" className="btn btn-sm btn-square">
           <Icon icon="heroicons:gif" />

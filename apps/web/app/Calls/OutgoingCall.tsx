@@ -1,6 +1,6 @@
 import { Icon } from "@repo/ui/Icon";
 
-export const OutgoingCall = () => {
+export const OutgoingCall = ({ callee }) => {
   return (
     <div className="card w-64 bg-primary shadow w-96 h-96 mx-auto image-full">
       <figure>
@@ -16,7 +16,6 @@ export const OutgoingCall = () => {
           </div>
         </div>
         <h2 className="card-title text-3xl">Ava Taylor</h2>
-
         <div className="card-actions justify-center">
           <button title="skip" className="btn btn-sm btn-square">
             <Icon icon="heroicons:microphone" height="25" width="25" />
