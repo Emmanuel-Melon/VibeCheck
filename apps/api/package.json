@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "npx ts-node src/server.ts"
+  },
   "dependencies": {
     "bullmq": "^5.1.0",
     "cors": "^2.8.5",

@@ -5,9 +5,14 @@ import {
 export const GET_USERS = gql`
 query getUsers {
   users {
-    id
-    created_at
     name
+    id
+    last_name
+    updated_at
+    first_name
+    avatar
+    created_at
+    bio
   }
 }
 `;
