@@ -30,8 +30,7 @@ export default function Page(): JSX.Element {
 
         <section className="flex h-full gap-8">
           <div className="space-y-2">
-            <Matches />
-            <VibePoolCandidates />
+            <Chats />
           </div>
         </section>
       </main>

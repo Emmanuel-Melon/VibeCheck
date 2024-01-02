@@ -1,4 +1,5 @@
 import { Icon } from "@repo/ui/Icon";
+
 export const ChatControls = () => {
     return (
       <div className="flex justify-between p-2 bg-gray-50 gap-4 w-full items-center">

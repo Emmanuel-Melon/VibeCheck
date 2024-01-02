@@ -17,7 +17,7 @@ export const Matches = () => {
   const { data: matches, error } = useGetUserMatches("121a6396-e6e0-4057-957d-1f4b5d3cfbd9");
   return (
     <div className="space-y-8 w-full">
-      <div className="flex justify-between items-center">
+      <div className="flex gap-4 items-center">
         <h3 className="text-2xl">People you vibe with</h3>
         <div>
           <button className="btn btn-sm btn-outline">View All</button>

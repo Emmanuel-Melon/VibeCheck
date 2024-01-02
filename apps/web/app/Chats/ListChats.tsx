@@ -5,38 +5,16 @@ const chats = [
     {
       id: 1,
       user: {
-        name: "Ava Taylor",
+        name: "Emma Johnson",
+        id: "1dd69b2b-f82d-487f-820c-559dc3e87f5b",
         avatar:
-          "https://www.stylevore.com/wp-content/uploads/2020/01/1b879ad961b1c7c082e8d21be64bb0d7.jpg",
+          "https://i0.wp.com/i.pinimg.com/originals/5a/1e/b9/5a1eb9194a09080d3e7d77574cf57822.jpg?resize=650,400",
       },
       lastMessage: {
         text: "Hey, Handsome",
         createdAt: "2023-12-24T04:00:05.78205+00:00"
       }
-    },
-    {
-      id: 2,
-      user: {
-        name: "Sophia Williams",
-        avatar: "https://www.refinery29.com/images/10353760.jpg",
-      },
-      lastMessage: {
-        text: "Nice!",
-        createdAt: "2023-12-26T04:11:05.78205+00:00"
-      }
-    },
-    {
-      id: 3,
-      user: {
-        name: "Olivia Brown",
-        avatar:
-          "https://i0.wp.com/i.pinimg.com/originals/ea/33/54/ea3354fc1adfb967691d628fd8d2c726.jpg?resize=650,400",
-      },
-      lastMessage: {
-        text: "Sounds really fun!",
-        createdAt: "2023-12-17T04:00:05.78205+00:00"
-      }
-    },
+    }
   ];
 
 export const ListChats = () => {

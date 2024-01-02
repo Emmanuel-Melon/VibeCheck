@@ -1,21 +1,7 @@
 import { gql } from "@apollo/client";
 
-export const GET_USER_CHATS = gql`
-  query GetConversations {
-    conversations {
-      id
-      name
-      messages {
-        id
-        text
-        sender
-      }
-    }
-  }
-`;
-
-export const GET_MESSAGES = gql`
-  query GetMessages($chat_id: uuid) {
+export const GET_MESSAGES_SUBSCRIPTION = gql`
+  query GetMessagesSubscription($chat_id: uuid) {
     messages(where: { chat_id: { _eq: $chat_id } }) {
       id
       chat_id
