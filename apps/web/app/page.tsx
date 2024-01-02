@@ -29,9 +29,9 @@ export default function Page(): JSX.Element {
         <Header />
 
         <section className="flex h-full gap-8">
-          <div>
+          <div className="space-y-2">
             <Matches />
-
+            <VibePoolCandidates />
           </div>
         </section>
       </main>

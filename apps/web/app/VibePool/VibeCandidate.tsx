@@ -49,7 +49,7 @@ export const VibeCandidate = ({ vibeCandidate }) => {
     </div> */}
       <div className="card card-compact w-96 bg-white shadow-lg">
         <figure>
-          <img src={vibeCandidate.avatar} alt="Shoes" />
+          <img src={vibeCandidate.avatar} alt={vibeCandidate.name} />
         </figure>
         <div className="card-body">
           <h2 className="card-title">{vibeCandidate.name}</h2>
