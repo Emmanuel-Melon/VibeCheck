@@ -32,7 +32,7 @@ const notifications = [
     user: {
       name: "Isabella Jones",
       avatar:
-        "https://i.pinimg.com/736x/fb/9f/04/fb9f040640c59b1b78d283218c58edfb.jpg≈", // URL to the avatar image
+        "https://i.pinimg.com/736x/fb/9f/04/fb9f040640c59b1b78d283218c58edfb.jpg", // URL to the avatar image
     },
     event: {
       type: "vibe match",

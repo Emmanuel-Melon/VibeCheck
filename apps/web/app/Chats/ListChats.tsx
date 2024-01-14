@@ -1,3 +1,4 @@
+"use client";
 import { useChatsStore } from "../../src/hooks/useChatsStore";
 import { ChatOverview } from "./ChatOverview";
 

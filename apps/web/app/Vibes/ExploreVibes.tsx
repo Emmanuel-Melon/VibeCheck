@@ -1,6 +1,6 @@
 "use client";
 import { VibeCard } from "./VibeCard";
-import { useGetVibes } from "../../src/hooks/vibes";
+// import { useGetVibes } from "../../src/hooks/vibes";
 
 const vibes = [
   {

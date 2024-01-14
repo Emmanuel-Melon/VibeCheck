@@ -1,3 +1,4 @@
+"use client";
 import { useGetMessages } from "../../src/hooks/chats";
 import { ChatControls } from "./ChatControls";
 import { ChatInputs } from "./ChatInputs";

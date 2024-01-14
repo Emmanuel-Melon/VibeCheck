@@ -34,6 +34,7 @@ const Controls = ({ vibeCandidate }) => {
   );
 };
 
+
 export const VibeCandidate = ({ vibeCandidate }) => {
   return (
     <div className="space-y-2">
