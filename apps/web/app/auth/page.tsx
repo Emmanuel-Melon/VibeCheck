@@ -1,5 +1,4 @@
 import { FormControl } from "@repo/ui/FormControl";
-import { Icon } from "@repo/ui/Icon";
 
 export default function AuthPage(): JSX.Element {
   return (
@@ -26,13 +25,6 @@ export default function AuthPage(): JSX.Element {
               <button className="btn btn-primary w-full my-2">Join Now</button>
             </div>
           </form>
-          <div className="divider">Or</div>
-          <div>
-            <div className="card-actions justify-end">
-              <button className="btn btn-ghost w-full"><Icon icon="heroicons:user" /> Google</button>
-              <button className="btn btn-ghost w-full"><Icon icon="heroicons:user" /> Instagram</button>
-            </div>
-          </div>
         </div>
       </div>
     </div>

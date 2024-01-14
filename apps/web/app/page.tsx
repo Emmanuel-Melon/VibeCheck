@@ -16,5 +16,10 @@ import { Chats } from "./chats/Chats";
 import { Matches } from "./Match/Matches";
 
 export default function Page(): JSX.Element {
-  return <VibePoolCandidates />;
+  return (
+    <div className="w-full space-y-2">
+       <StoriesQuickPanel />
+       <VibePoolCandidates />
+    </div>
+  );
 }
