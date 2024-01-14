@@ -5,7 +5,7 @@ import { SEND_MESSAGE } from "../lib/graphql/mutations/chats";
 import { useSuspenseQuery } from "@apollo/experimental-nextjs-app-support/ssr";
 
 export const useGetMessages = (chatId: string) => {
-    const { error, data } = useSuspenseQuery(GET_MESSAGES, {
+    const { error, data } = useQuery(GET_MESSAGES, {
         variables: {
             chat_id: chatId
         }
@@ -15,6 +15,5 @@ export const useGetMessages = (chatId: string) => {
 
 export const useInsertNewMessage = () => {
     const [insertNewMessage, { error, data }] = useMutation(SEND_MESSAGE);
-
     return { insertNewMessage, error, data };
 }

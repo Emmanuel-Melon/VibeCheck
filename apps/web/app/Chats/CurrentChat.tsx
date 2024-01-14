@@ -9,7 +9,7 @@ const ChatMessages = ({ messages }) => {
   const currentChat = useChatsStore((state) => state.currentChat);
   return (
     <div className=" p-2">
-      {messages.map((message) => {
+      {messages?.map((message) => {
         return <ChatBubble key={message.id} message={message} />;
       })}
     </div>

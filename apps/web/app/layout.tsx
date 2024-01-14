@@ -6,20 +6,30 @@ export const metadata: Metadata = {
 };
 import { Header } from "./components/Header";
 
+import {
+  ApolloNextAppProvider,
+  NextSSRInMemoryCache,
+  SSRMultipartLink,
+} from "@apollo/experimental-nextjs-app-support/ssr";
+import { client } from "../src/lib/graphql/client";
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <html lang="en">
-      <body className="h-min-screen flex justify-center items-center">
-        <main className="min-h-screen p-2 w-fit space-y-2">
-          <Header />
-          <section className="flex justify-center h-full gap-8">{children}
-          </section>
-        </main>
-      </body>
-    </html>
+    <ApolloNextAppProvider makeClient={client}>
+      <html lang="en">
+        <body className="h-min-screen flex justify-center items-center">
+          <main className="min-h-screen p-2 basis-3/6">
+            <Header />
+            <section className=" w-full flex justify-center h-full gap-8">
+              {children}
+            </section>
+          </main>
+        </body>
+      </html>
+    </ApolloNextAppProvider>
   );
 }

@@ -30,21 +30,7 @@ const vibes = [
     image:
       "https://res.cloudinary.com/dwacr3zpp/image/upload/v1703565702/Designer_16.jpg",
     name: "House Parties",
-  },
-  {
-    created_at: "2023-12-26T04:44:42.647429+00:00",
-    id: "80a2c862-e87a-47e9-96ea-073df125cc51",
-    image:
-      "https://res.cloudinary.com/dwacr3zpp/image/upload/v1703565701/Designer_14.jpg",
-    name: "Cooking",
-  },
-  {
-    created_at: "2023-12-26T05:00:24.079425+00:00",
-    id: "9250eb3d-8c11-4e1b-b460-ed4ca48b866f",
-    image:
-      "https://res.cloudinary.com/dwacr3zpp/image/upload/v1703565702/Designer_12.jpg",
-    name: "Video Games",
-  },
+  }
 ];
 
 export const ExploreVibes = () => {

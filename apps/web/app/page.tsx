@@ -15,19 +15,6 @@ import { CallHistory } from "./Calls/CallHistory";
 import { Chats } from "./chats/Chats";
 import { Matches } from "./Match/Matches";
 
-import {
-  ApolloNextAppProvider,
-  NextSSRInMemoryCache,
-  SSRMultipartLink,
-} from "@apollo/experimental-nextjs-app-support/ssr";
-import { client } from "../src/lib/graphql/client";
-
 export default function Page(): JSX.Element {
-  return (
-    <ApolloNextAppProvider makeClient={client}>
-      <section className="flex h-full gap-8">
-        <VibePoolCandidates />
-      </section>
-    </ApolloNextAppProvider>
-  );
+  return <VibePoolCandidates />;
 }
